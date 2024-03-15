@@ -39,17 +39,23 @@ In this repository, I have documented my journey learning Tailwind CSS, a utilit
 
 Additionally, I have included screenshots of the final website created using Tailwind CSS. Below is a code snippet for adding editable sections for these screenshots in the Markdown file:
 
-```markdown
-<!-- PC View -->
-![PC View](screenshots/website_pc.png)
-
-<!-- Mobile View -->
-![Mobile View](screenshots/mobile_view.png)
-
-<!-- Tablet Views and Tablet View with Menu visible -->
-<div style="display: flex; justify-content: space-between;">
-    <!-- Tablet View -->
-    ![Tablet View](screenshots/tablet_view.png)
-    <!-- Tablet View with Menu visible -->
-    ![Tablet View with Menu visible](screenshots/tablet_view_menu_visible.png)
+<!-- PC View and Mobile View -->
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+    <div style="display: flex;">
+        <img src="https://raw.githubusercontent.com/5alafawyyy/Food-Ninja/master/screenshots/website_pc.png" alt="PC View" style="width: 70%;">
+        <img src="https://raw.githubusercontent.com/5alafawyyy/Food-Ninja/master/screenshots/mobile_view.png" alt="Mobile View" style="width: 28%;">
+    </div>
+    <!-- Add an empty div to create space between the rows -->
+    <div style="flex-grow: 1;"></div>
 </div>
+
+<!-- Tablet View and Tablet View with Menu visible -->
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+    <div style="display: flex;">
+        <img src="https://raw.githubusercontent.com/5alafawyyy/Food-Ninja/master/screenshots/tablet_view.png" alt="Tablet View" style="width: 48%;">
+        <img src="https://raw.githubusercontent.com/5alafawyyy/Food-Ninja/master/screenshots/tablet_view_menu_visible.png" alt="Tablet View with Menu visible" style="width: 48%;">
+    </div>
+    <!-- Add an empty div to create space between the rows -->
+    <div style="flex-grow: 1;"></div>
+</div>
+
